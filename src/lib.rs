@@ -18,7 +18,7 @@ struct WavHeader {
     sub_chunk2_size: u32,
 }
 
-fn read_wav_header(file: &mut File) -> Result<WavHeader, std::io::Error> {
+pub fn read_wav_header(file: &mut File) -> Result<WavHeader, std::io::Error> {
     let mut header = [0u8; 44];
     file.read_exact(&mut header)?;
 
