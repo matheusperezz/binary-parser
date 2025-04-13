@@ -5,3 +5,21 @@ version = 4
 [[package]]
 name = "binary-parser"
 version = "0.1.0"
+dependencies = [
+ "lame-sys",
+]
+
+[[package]]
+name = "lame-sys"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef7a865a9bc9bb053df35f36e426ccadca933d172fe131abf7a14d4084c7e38f"
+dependencies = [
+ "libc",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.171"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c19937216e9d3aa9956d9bb8dfc0b0c8beb6058fc4f7a4dc4d850edf86a237d6"
